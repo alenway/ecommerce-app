@@ -11,7 +11,7 @@ const ProductCard = () => {
 
   return (
     <div className="col-3">
-      <div className="product-card position-relative">
+      <Link className="product-card position-relative">
         <div className="wishlist-icon position-absolute">
           <Link>
             <img src="images/wish.svg" alt="wishlist" />
@@ -19,6 +19,7 @@ const ProductCard = () => {
         </div>
         <div className="product-image">
           <img src="images/watch.jpg" alt="product image" />
+          <img src="images/watch-1.jpg" alt="product image" />
         </div>
         <div className="product-details">
           <h6 className="brand">Havels</h6>
@@ -29,7 +30,7 @@ const ProductCard = () => {
             count={5}
             size={24}
             isHalf={true}
-            value="3"
+            value={4}
             edit={false}
             emptyIcon={<i className="far fa-star"></i>}
             halfIcon={<i className="fa fa-star-half-alt"></i>}
@@ -51,7 +52,7 @@ const ProductCard = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </Link>
     </div>
   );
 };

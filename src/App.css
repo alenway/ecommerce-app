@@ -298,18 +298,18 @@ footer .input-group-text {
 }
 /* Single Blog part */
 
-.blog-post-card h2 {
+.single-blog-card h2 {
   font-size: 24px;
   font-weight: 600;
   color: var(--color-1c1c1b);
 }
 
-.blog-post-card p {
+.single-blog-card p {
   color: var(--color-777777);
   font-size: 14px;
 }
 
-.blog-post-card a {
+.single-blog-card a {
   font-size: 18px;
   color: var(--color-777777);
   margin-bottom: 20px;
@@ -695,3 +695,12 @@ footer .input-group-text {
 }
 
 /* auth card ends here */
+
+/* Policy Page  */
+
+.policy {
+  background-color: white;
+  padding: 30px;
+}
+
+/* Policy Page ends here  */

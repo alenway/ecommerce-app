@@ -13,7 +13,7 @@ const SingleBlog = () => {
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
-              <article className="blog-post-card">
+              <article className="single-blog-card">
                 <Link
                   to="/blogs"
                   className="back-link d-flex align-items-center gap-10"
@@ -21,7 +21,7 @@ const SingleBlog = () => {
                   <HiOutlineArrowLeft className="icon fs-4" />
                   Return to Blog List
                 </Link>
-                <h2 className="blog-post-title">
+                <h2 className="single-blog-title">
                   A Beautiful Sunday Morning Renaissance
                 </h2>
                 <img
@@ -29,7 +29,7 @@ const SingleBlog = () => {
                   className="img-fluid"
                   alt="Blog post"
                 />
-                <p className="blog-post-content">
+                <p className="single-blog-content">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco

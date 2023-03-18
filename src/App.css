@@ -296,6 +296,26 @@ footer .input-group-text {
   line-height: 22px;
   color: var(--color-777777);
 }
+/* Single Blog part */
+
+.blog-post-card h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-1c1c1b);
+}
+
+.blog-post-card p {
+  color: var(--color-777777);
+  font-size: 14px;
+}
+
+.blog-post-card a {
+  font-size: 18px;
+  color: var(--color-777777);
+  margin-bottom: 20px;
+}
+
+/* Single Blog part ends here */
 
 /* Blog Part ends here */
 

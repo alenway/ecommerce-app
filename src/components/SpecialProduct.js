@@ -1,5 +1,6 @@
 import React from "react";
-import ReactStars from "react-rating-stars-component";
+import StarsRating from "stars-rating";
+
 import { Link } from "react-router-dom";
 
 const SpecialProduct = () => {
@@ -13,16 +14,12 @@ const SpecialProduct = () => {
           <div className="special-product-content">
             <h5 className="brand">Havels</h5>
             <h6 className="title">Samsung Galaxy Note18+ Mobile Phone</h6>
-            <ReactStars
+            <StarsRating
               count={5}
-              size={24}
-              isHalf={true}
               value={4}
               edit={false}
-              emptyIcon={<i className="far fa-star"></i>}
-              halfIcon={<i className="fa fa-star-half-alt"></i>}
-              fullIcon={<i className="fa fa-star"></i>}
-              activeColor="#ffd700"
+              size={24}
+              color2={"#ffd700"}
             />
             <p className="price">
               <span className="red-p">$100</span>&nbsp;

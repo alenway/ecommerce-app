@@ -1,5 +1,5 @@
 import React from "react";
-import ReactStars from "react-rating-stars-component";
+import StarsRating from "stars-rating";
 import { Link, useLocation } from "react-router-dom";
 
 const ProductCard = (props) => {
@@ -16,39 +16,27 @@ const ProductCard = (props) => {
       <div
         className={`${location.pathname === "/store" ? `gr-${grid}` : "col-3"}`}
       >
-        <div className="product-card position-relative">
+        <Link to="/product" className="product-card position-relative">
           <div className="wishlist-icon position-absolute">
             <Link to="/">
               <img src="images/wish.svg" alt="wishlist" />
             </Link>
           </div>
           <div className="product-image">
-            <img
-              src="images/watch.jpg"
-              className="img-fluid"
-              alt="product image"
-            />
-            <img
-              src="images/watch-1.jpg"
-              className="img-fluid"
-              alt="product image"
-            />
+            <img src="images/watch.jpg" className="img-fluid" alt="product" />
+            <img src="images/watch-1.jpg" className="img-fluid" alt="product" />
           </div>
           <div className="product-details">
             <h6 className="brand">Havels</h6>
             <h5 className="product-title">
               Kids headphones buld 10 pack multi colored for students
             </h5>
-            <ReactStars
+            <StarsRating
               count={5}
-              size={24}
-              isHalf={true}
               value={4}
               edit={false}
-              emptyIcon={<i className="far fa-star"></i>}
-              halfIcon={<i className="fa fa-star-half-alt"></i>}
-              fullIcon={<i className="fa fa-star"></i>}
-              activeColor="#ffd700"
+              size={24}
+              color2={"#ffd700"}
             />
             <p className={`description ${grid === 12 ? "d-block" : "d-none"}`}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -73,7 +61,7 @@ const ProductCard = (props) => {
               </div>
             </div>
           </div>
-        </div>
+        </Link>
       </div>
 
       <div
@@ -86,15 +74,11 @@ const ProductCard = (props) => {
             </Link>
           </div>
           <div className="product-image">
-            <img
-              src="images/watch.jpg"
-              className="img-fluid"
-              alt="product image"
-            />
+            <img src="images/watch.jpg" className="img-fluid" alt="product " />
             <img
               src="images/watch-1.jpg"
               className="img-fluid"
-              alt="product image"
+              alt="product "
             />
           </div>
           <div className="product-details">
@@ -102,16 +86,12 @@ const ProductCard = (props) => {
             <h5 className="product-title">
               Kids headphones buld 10 pack multi colored for students
             </h5>
-            <ReactStars
+            <StarsRating
               count={5}
-              size={24}
-              isHalf={true}
               value={4}
               edit={false}
-              emptyIcon={<i className="far fa-star"></i>}
-              halfIcon={<i className="fa fa-star-half-alt"></i>}
-              fullIcon={<i className="fa fa-star"></i>}
-              activeColor="#ffd700"
+              size={24}
+              color2={"#ffd700"}
             />
             <p className={`description ${grid === 12 ? "d-block" : "d-none"}`}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

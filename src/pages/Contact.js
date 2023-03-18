@@ -16,6 +16,7 @@ const Contact = () => {
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14281.653370997192!2d74.62546534131496!3d26.506827653037366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396be64e50c5de13%3A0x6069b63323694eef!2sAjmer%20Vidyut%20Vitran%20Nigam%20Ltd!5e0!3m2!1sen!2sin!4v1679059409973!5m2!1sen!2sin"
                 width="100%"
+                title="Example"
                 height="450"
                 className="border-0 w-100"
                 allowFullScreen=""

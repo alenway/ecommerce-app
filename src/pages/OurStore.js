@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
-import ReactStars from "react-rating-stars-component";
+import StarsRating from "stars-rating";
 import ProductCard from "../components/ProductCard";
 import Color from "../components/Color";
 
@@ -140,16 +140,12 @@ const OurStore = () => {
                       <h5>
                         Kids Headphone buld 10 pack multi colored for students
                       </h5>
-                      <ReactStars
+                      <StarsRating
                         count={5}
-                        size={24}
-                        isHalf={true}
                         value={4}
                         edit={false}
-                        emptyIcon={<i className="far fa-star"></i>}
-                        halfIcon={<i className="fa fa-star-half-alt"></i>}
-                        fullIcon={<i className="fa fa-star"></i>}
-                        activeColor="#ffd700"
+                        size={24}
+                        color2={"#ffd700"}
                       />
                       <b>$ 300</b>
                     </div>
@@ -166,16 +162,12 @@ const OurStore = () => {
                       <h5>
                         Kids Headphone buld 10 pack multi colored for students
                       </h5>
-                      <ReactStars
+                      <StarsRating
                         count={5}
-                        size={24}
-                        isHalf={true}
                         value={4}
                         edit={false}
-                        emptyIcon={<i className="far fa-star"></i>}
-                        halfIcon={<i className="fa fa-star-half-alt"></i>}
-                        fullIcon={<i className="fa fa-star"></i>}
-                        activeColor="#ffd700"
+                        size={24}
+                        color2={"#ffd700"}
                       />
                       <b>$ 300</b>
                     </div>

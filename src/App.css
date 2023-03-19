@@ -100,7 +100,7 @@ a {
 }
 
 .header-bottom .dropdown button::before {
-  contain: url("../public/images/menu.svg");
+  contain: url("../src/images/menu.svg");
 }
 
 .header-bottom .dropdown button:focus {

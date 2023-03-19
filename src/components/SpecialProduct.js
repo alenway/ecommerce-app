@@ -3,13 +3,15 @@ import StarsRating from "stars-rating";
 
 import { Link } from "react-router-dom";
 
+import watch from "../images/watch.jpg";
+
 const SpecialProduct = () => {
   return (
     <div className="col-6 mb-3">
       <div className="special-product-card">
         <div className="d-flex justify-content-between">
           <div>
-            <img className="img-fluid" src="images/watch.jpg" alt="" />
+            <img className="img-fluid" src={watch} alt="" />
           </div>
           <div className="special-product-content">
             <h5 className="brand">Havels</h5>

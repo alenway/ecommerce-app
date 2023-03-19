@@ -2,6 +2,14 @@ import React from "react";
 import StarsRating from "stars-rating";
 import { Link, useLocation } from "react-router-dom";
 
+import prodcompare from "../images/prodcompare.svg";
+import wish from "../images/wish.svg";
+import wishlist from "../images/wishlist.svg";
+import watch from "../images/watch.jpg";
+import watch2 from "../images/watch-1.jpg";
+import addcart from "../images/add-cart.svg";
+import view from "../images/view.svg";
+
 const ProductCard = (props) => {
   const { grid } = props;
   let location = useLocation();
@@ -19,12 +27,12 @@ const ProductCard = (props) => {
         <Link to="/product" className="product-card position-relative">
           <div className="wishlist-icon position-absolute">
             <Link to="/">
-              <img src="images/wish.svg" alt="wishlist" />
+              <img src={wish} alt="wishlist" />
             </Link>
           </div>
           <div className="product-image">
-            <img src="images/watch.jpg" className="img-fluid" alt="product" />
-            <img src="images/watch-1.jpg" className="img-fluid" alt="product" />
+            <img src={watch} className="img-fluid" alt="product" />
+            <img src={watch2} className="img-fluid" alt="product" />
           </div>
           <div className="product-details">
             <h6 className="brand">Havels</h6>
@@ -44,20 +52,20 @@ const ProductCard = (props) => {
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
               reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.{" "}
+              nulla pariatur.
             </p>
             <p className="price">$100.00</p>
           </div>
           <div className="action-bar position-absolute">
             <div className="d-flex flex-column gap-15">
               <div>
-                <img src="images/prodcompare.svg" alt="compare" />
+                <img src={prodcompare} alt="compare" />
               </div>
               <div>
-                <img src="images/view.svg" alt="view" />
+                <img src={view} alt="view" />
               </div>
               <div>
-                <img src="images/add-cart.svg" alt="addcart" />
+                <img src={addcart} alt="addcart" />
               </div>
             </div>
           </div>
@@ -70,16 +78,12 @@ const ProductCard = (props) => {
         <div className="product-card position-relative">
           <div className="wishlist-icon position-absolute">
             <Link to="/">
-              <img src="images/wish.svg" alt="wishlist" />
+              <img src={wishlist} alt="wishlist" />
             </Link>
           </div>
           <div className="product-image">
-            <img src="images/watch.jpg" className="img-fluid" alt="product " />
-            <img
-              src="images/watch-1.jpg"
-              className="img-fluid"
-              alt="product "
-            />
+            <img src={watch} className="img-fluid" alt="product " />
+            <img src={watch2} className="img-fluid" alt="product " />
           </div>
           <div className="product-details">
             <h6 className="brand">Havels</h6>
@@ -99,20 +103,20 @@ const ProductCard = (props) => {
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
               reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.{" "}
+              nulla pariatur.
             </p>
             <p className="price">$100.00</p>
           </div>
           <div className="action-bar position-absolute">
             <div className="d-flex flex-column gap-15">
               <div>
-                <img src="images/prodcompare.svg" alt="compare" />
+                <img src={prodcompare} alt="compare" />
               </div>
               <div>
-                <img src="images/view.svg" alt="view" />
+                <img src={view} alt="view" />
               </div>
               <div>
-                <img src="images/add-cart.svg" alt="addcart" />
+                <img src={addcart} alt="addcart" />
               </div>
             </div>
           </div>

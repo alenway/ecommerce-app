@@ -4,6 +4,8 @@ import { HiOutlineArrowLeft } from "react-icons/hi";
 import Meta from "../components/Meta";
 import BreadCrumb from "../components/BreadCrumb";
 
+import blog1 from "../images/blog-1.jpg";
+
 const SingleBlog = () => {
   return (
     <>
@@ -24,11 +26,7 @@ const SingleBlog = () => {
                 <h2 className="single-blog-title">
                   A Beautiful Sunday Morning Renaissance
                 </h2>
-                <img
-                  src="images/blog-1.jpg"
-                  className="img-fluid"
-                  alt="Blog post"
-                />
+                <img src={blog1} className="img-fluid" alt="Blog post" />
                 <p className="single-blog-content">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.

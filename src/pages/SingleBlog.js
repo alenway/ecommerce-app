@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { HiOutlineArrowLeft } from "react-icons/hi";
 import Meta from "../components/Meta";
 import BreadCrumb from "../components/BreadCrumb";
+import Container from "../components/Container";
 
 import blog1 from "../images/blog-1.jpg";
 
@@ -11,8 +12,7 @@ const SingleBlog = () => {
     <>
       <Meta title="Dynamic Blog Name" />
       <BreadCrumb title="Dynamic Blog Name" />
-      <section className="blog-wrapper home-wrapper-2 py-5">
-        <div className="container-xxl">
+      <Container class1="blog-wrapper home-wrapper-2 py-5">
           <div className="row">
             <div className="col-12">
               <article className="single-blog-card">
@@ -40,8 +40,7 @@ const SingleBlog = () => {
               </article>
             </div>
           </div>
-        </div>
-      </section>
+      </Container>
     </>
   );
 };

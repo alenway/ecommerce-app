@@ -4,6 +4,7 @@ import Meta from "../components/Meta";
 import { AiOutlineHome, AiOutlineMail } from "react-icons/ai";
 import { BiPhoneCall, BiInfoCircle } from "react-icons/bi";
 import Container from "../components/Container";
+import Custominput from "./Custominput";
 
 const Contact = () => {
   return (
@@ -29,27 +30,10 @@ const Contact = () => {
               <div>
                 <h3 className="contact-title mb-4">Contact</h3>
                 <form action="" className="d-flex flex-column gap-15">
-                  <div>
-                    <input
-                      type="text"
-                      placeholder="Name"
-                      className="form-control"
-                    />
-                  </div>
-                  <div>
-                    <input
-                      type="email"
-                      placeholder="Email"
-                      className="form-control"
-                    />
-                  </div>
-                  <div>
-                    <input
-                      type="tel"
-                      className="form-control"
-                      placeholder="Mobile Number"
-                    />
-                  </div>
+                  <Custominput type="text" placeholder="Name" />
+                  <Custominput type="email" placeholder="Email" />
+                  <Custominput type="tel" placeholder="Mobile Number" />
+
                   <div>
                     <textarea
                       name=""

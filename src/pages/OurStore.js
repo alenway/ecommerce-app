@@ -182,7 +182,12 @@ const OurStore = () => {
                   <p className="mb-0 d-block" style={{ width: "100px" }}>
                     Sort By:
                   </p>
-                  <select name="" className="form-control form-select" id="">
+                  <select
+                    name=""
+                    className="form-control form-select"
+                    id=""
+                    defaultValue={"DEFAULT"}
+                  >
                     <option value="manual">Featured</option>
                     <option value="best-selling" defaultValue>
                       Best Selling

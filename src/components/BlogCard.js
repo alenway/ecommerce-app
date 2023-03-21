@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import blog1 from "../images/blog-1.jpg"
+import blog1 from "../images/blog-1.jpg";
 
 const BlogCard = () => {
   return (
@@ -18,7 +18,7 @@ const BlogCard = () => {
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
         </p>
-        <Link to="/blog" className="button">
+        <Link to="/blog/:id" className="button">
           Read More
         </Link>
       </div>

@@ -4,7 +4,6 @@ import { Link, useLocation } from "react-router-dom";
 
 import prodcompare from "../images/prodcompare.svg";
 import wish from "../images/wish.svg";
-import wishlist from "../images/wishlist.svg";
 import watch from "../images/watch.jpg";
 import watch2 from "../images/watch-1.jpg";
 import addcart from "../images/add-cart.svg";
@@ -22,9 +21,20 @@ const ProductCard = (props) => {
   return (
     <>
       <div
-        className={`${location.pathname === "/store" ? `gr-${grid}` : "col-3"}`}
+        className={`${
+          location.pathname === "/product" ? `gr-${grid}` : "col-3"
+        }`}
       >
-        <Link to="/product" className="product-card position-relative">
+        <Link
+          to={`${
+            location.pathname === "/"
+              ? "/product/:id"
+              : location.pathname === "/product/:id"
+              ? "/product/:id"
+              : ":id"
+          }`}
+          className="product-card position-relative"
+        >
           <div className="wishlist-icon position-absolute">
             <button className="border-0 bg-transparent">
               <img src={wish} alt="wishlist" />
@@ -73,17 +83,28 @@ const ProductCard = (props) => {
       </div>
 
       <div
-        className={`${location.pathname === "/store" ? `gr-${grid}` : "col-3"}`}
+        className={`${
+          location.pathname === "/product" ? `gr-${grid}` : "col-3"
+        }`}
       >
-        <div className="product-card position-relative">
+        <Link
+          to={`${
+            location.pathname === "/"
+              ? "/product/:id"
+              : location.pathname === "/product/:id"
+              ? "/product/:id"
+              : ":id"
+          }`}
+          className="product-card position-relative"
+        >
           <div className="wishlist-icon position-absolute">
             <button className="border-0 bg-transparent">
-              <img src={wishlist} alt="wishlist" />
+              <img src={wish} alt="wishlist" />
             </button>
           </div>
           <div className="product-image">
-            <img src={watch} className="img-fluid" alt="product " />
-            <img src={watch2} className="img-fluid" alt="product " />
+            <img src={watch} className="img-fluid" alt="product" />
+            <img src={watch2} className="img-fluid" alt="product" />
           </div>
           <div className="product-details">
             <h6 className="brand">Havels</h6>
@@ -120,7 +141,7 @@ const ProductCard = (props) => {
               </button>
             </div>
           </div>
-        </div>
+        </Link>
       </div>
     </>
   );
